@@ -11,14 +11,57 @@
    * 3°) avec une arrow fonction et une expression conditionnelle
 */
 
+/*
+
+function direBonjour(prenom){
+    if (prenom !== ""){
+        alert(`Bonjour, ${prenom} !`);
+    }else {
+        alert("Bonjour, toi ! Tu ne veux pas me dire comment tu t'appelles ?");
+    }
+}
+
+function clique(){
+    const prenomInput = document.getElementById("prenom");
+    const prenom = prenomInput.value;
+
+    direBonjour(prenom);
+}
+
+const surname = document.getElementById("hello");
+
+surname.addEventListener("click", clique);
+
+*/
 
 // Autre écriture
 
+/*
 
+const surname = document.getElementById("hello");
 
+surname.addEventListener("click", function () {
+    const prenomInput = document.getElementById("prenom");
+    const prenom = prenomInput.value;
+    if (prenom !== "") {
+        alert(`Bonjour, ${prenom} !`);
+    } else {
+        alert("Bonjour, toi ! Tu ne veux pas me dire comment tu t'appelles ?");
+    }
+});
+
+*/
 
 // Plus court : écriture ES6 avec expression conditionnelle
 
+const surname = document.getElementById("hello");
 
-
-
+surname.addEventListener("click",  () => {
+    const prenomInput = document.getElementById("prenom");
+    const prenom = prenomInput.value;
+    if (prenom !== "") {
+        alert(`Bonjour, ${prenom} !`);
+    } else {
+        alert("Bonjour, toi ! Tu ne veux pas me dire comment tu t'appelles ?");
+    }
+});

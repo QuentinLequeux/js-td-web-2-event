@@ -14,3 +14,13 @@ EXERCICE 6 : Change couleur (3)
 
 // ÉTAPE 2 : version avec deux écouteurs
 
+function clique(event){
+    if (event.key === "Enter"){
+        event.preventDefault();
+    }
+    const attr = document.getElementById("colorChoice").value;
+    document.body.style.backgroundColor = attr;
+}
+
+document.getElementById("colorBtn").addEventListener("click", clique);
+document.getElementById("colorForm").addEventListener("keydown", clique);

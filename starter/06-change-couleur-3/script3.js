@@ -12,3 +12,16 @@ EXERCICE 6 : Change couleur (3)
 */
 
 // ÉTAPE 3 :  en écoutant la soumission du formulaire
+
+function clique(event) {
+    event.preventDefault();
+    const attr = document.getElementById("colorChoice").value;
+    document.body.style.backgroundColor = attr;
+    document.getElementById("colorChoice").value = ``;
+}
+
+document.getElementById('colorForm').addEventListener('submit', clique);
+
+document.getElementById('colorChoice').addEventListener('focus', function () {
+    this.value = '';
+});

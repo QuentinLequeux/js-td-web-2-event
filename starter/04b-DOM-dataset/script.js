@@ -14,6 +14,7 @@ Par exemple, je peux, dans une balise qui contient le nom d'un article,
 enregistrer le n° d'article qu'il possède dans ma base de données dans un attribut data-index
 et le nombre d'exemplaires en stock dans un attribut data-stock
 */
+
 /*
 Comment récupérer avec JS la valeur de ces attributs data-index et data-stock ?
 On ne peut pas juste écrire Elt.data-index car cet attribut n'existe pas…
@@ -30,3 +31,7 @@ Les attributs individuels sont eux-mêmes des propriétés de l'objet dataset.
 Affiche dans la console la valeur de l'attribut data-index de l'iPhone XS Max
 et puis affiche "J'ai … iPhone(s) XS Max en stock"
 */
+
+const container = document.getElementById("xs-max");
+console.log(container.dataset.index);
+console.log(`J'ai ${container.dataset.index} iPhone(s) XS Max en stock.`);

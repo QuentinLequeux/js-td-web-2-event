@@ -48,7 +48,6 @@ function keybordEvent(event){
 
 document.addEventListener("keydown", keybordEvent);
 
-
 /* 
 N.B. La méthode de récupération de la touche pressée dans le tutoriel est dépréciée et plus compliquée (on récupère le code de la touche et puis il faut encore y appliquer une fonction pour transformer ce code en lettre) :
 var touche = String.fromCharCode(e.charCode); // Récupération de la touche pressée

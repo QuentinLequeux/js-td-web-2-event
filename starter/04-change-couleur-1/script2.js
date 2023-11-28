@@ -25,4 +25,3 @@ document.addEventListener("DOMContentLoaded",  () => {
 });
 
 // BONUS : encore mieux avec la boucle
-

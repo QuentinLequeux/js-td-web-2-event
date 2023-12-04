@@ -26,8 +26,10 @@ La méthode classique est de créer une variable temporaire, comme ceci :
 */
 
 
-
 // version de base
 
+document.querySelector("img").addEventListener("click", () => {
+    document.querySelector("img").src = document.querySelector("img").getAttribute("data-hover");
+});
 
 // BONUS : switch entre les deux images

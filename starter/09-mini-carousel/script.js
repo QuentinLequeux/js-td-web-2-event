@@ -14,3 +14,23 @@ AIDE : voici les étapes :
 5. En fin de longueur du tableau, on redémarre au début de l'index
 */
 
+const imageSources = ["img/becode-seal.png", "img/clock.svg", "img/compass.svg", "img/kiss.svg", "img/kiss-wink-heart.svg", "img/lemon.svg", "img/map.svg", "img/bell.svg"];
+let i = 0;
+document.getElementById("next").addEventListener("click", () =>{
+    document.querySelector("figure img").src = imageSources[i];
+    i++;
+    if (i === imageSources.length){
+        i = 0;
+    }
+});
+
+/*
+Ajouter un écouteur d'evènement
+let i = 0;
+img.src= table[i];
+if (i > table.length){
+    i = 0;
+}else{
+    i++;
+}
+*/
